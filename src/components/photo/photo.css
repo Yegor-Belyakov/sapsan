@@ -1,0 +1,15 @@
+.photo__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 16px 80px;
+  box-sizing: border-box;
+  
+}
+
+.photo__img {
+  box-sizing: border-box;
+width: 204.17px;
+height: 204px;
+
+}
