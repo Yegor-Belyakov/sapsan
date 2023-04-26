@@ -1,13 +1,14 @@
-import React from 'react'
-import "./button.css"
+import React from "react";
+import "./button.css";
 
-function Button({findPhoto}) {
+function Button({ findPhoto }) {
   return (
     <div>
-
-      <button onClick={() => findPhoto()} className='btn'>Искать</button>
+      <button onClick={() => findPhoto()} className="btn">
+        Искать
+      </button>
     </div>
-  )
+  );
 }
 
-export default Button
+export default Button;

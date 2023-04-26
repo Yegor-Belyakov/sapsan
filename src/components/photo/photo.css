@@ -4,12 +4,24 @@
   gap: 8px;
   padding: 16px 80px;
   box-sizing: border-box;
-  
+  margin-top: 90px;
 }
 
 .photo__img {
   box-sizing: border-box;
-width: 204.17px;
-height: 204px;
+  width: 204.17px;
+  height: 204px;
+  border: 1px solid #EBEBEB;
+  border-radius: 4px;
+}
 
+@media screen and (min-width: 360px) and (max-width: 600px) {
+  .photo__img {
+    width: 114px;
+    height: 114px;
+  }
+
+  .photo__wrapper {
+    padding: 16px 16px;
+  }
 }

@@ -1,28 +1,37 @@
 .input__wrapper {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 8px;
+  gap: 4px;
+  width: 420px;
+  height: 48px;
+  box-sizing: border-box;
+  background: #EEEEEE;
+  border-radius: 12px;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: start;
+  cursor: pointer;
+  color: #9C9C9C;
+}
 
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 12px 8px;
-gap: 4px;
-width: 420px;
-height: 48px;
-box-sizing: border-box;
-background: #EEEEEE;
-border-radius: 12px;
-border: none;
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .input__wrapper  {
+    width: 268px;
+  }
+}
 
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
+.input__wrapper:hover {
+  background: #E6E6E6;
+}
 
-text-align: start;
-cursor: pointer;
-color: #9C9C9C;
+.input__wrapper:hover .input{
+  background: #E6E6E6;
 }
 
 .input__left-block {
@@ -33,15 +42,15 @@ color: #9C9C9C;
 
 .input {
   display: flex;  
-border: none;
-color: #000000;
-background: #EEEEEE;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-width: 205px;
-height: 19px;
-cursor: pointer;
-outline: none;
-
+  border: none;
+  color: #000000;
+  background: #EEEEEE;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  width: 205px;
+  height: 19px;
+  cursor: pointer;
+  outline: none;
 }
+

@@ -3,24 +3,29 @@ import searchImg from "../../img/input find img.svg";
 import deleteImg from "../../img/input delete img.svg";
 import "../input/input.css";
 
-function Input({inputValue, setInputValue, setImages, setValueDirty }) {
-
-  function clearInput () {
-    setInputValue('')
-    setImages([])
-    setValueDirty(false)
+function Input({
+  inputValue,
+  setInputValue,
+  setImages,
+  valueDirty,
+  setNotFound,
+}) {
+  function clearInput() {
+    setInputValue("");
+    setImages([]);
+    setNotFound(false);
   }
 
- 
-
   return (
-    <div className="input__wrapper" onClick={() => document.getElementById("input").focus()}>
+    <div
+      className="input__wrapper"
+      onClick={() => document.getElementById("input").focus()}
+    >
       <div className="input__left-block">
         <img
           src={searchImg}
           className="input__img-search"
           alt="searchImg"
-
         ></img>
         <input
           className="input"
@@ -32,7 +37,14 @@ function Input({inputValue, setInputValue, setImages, setValueDirty }) {
         ></input>
       </div>
 
-      <img onClick={() => clearInput()} src={deleteImg} className="input__img-delete" alt="deleteImg"></img>
+      {valueDirty && (
+        <img
+          onClick={() => clearInput()}
+          src={deleteImg}
+          className="input__img-delete"
+          alt="deleteImg"
+        ></img>
+      )}
     </div>
   );
 }
