@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 8px;
+  padding: 14px 6px;
   gap: 4px;
   width: 420px;
   height: 48px;
@@ -18,12 +18,6 @@
   text-align: start;
   cursor: pointer;
   color: #9C9C9C;
-}
-
-@media screen and (min-width: 320px) and (max-width: 600px) {
-  .input__wrapper  {
-    width: 268px;
-  }
 }
 
 .input__wrapper:hover {
@@ -54,3 +48,13 @@
   outline: none;
 }
 
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .input__wrapper  {
+    width: 268px;
+   position: relative;
+  }
+.input__img-delete {
+  position: absolute;
+  right: 14px;
+}
+}
