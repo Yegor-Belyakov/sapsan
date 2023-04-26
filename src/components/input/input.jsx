@@ -37,7 +37,7 @@ function Input({
         ></input>
       </div>
 
-      {valueDirty && (
+      {inputValue  && (
         <img
           onClick={() => clearInput()}
           src={deleteImg}
