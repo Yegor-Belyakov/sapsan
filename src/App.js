@@ -28,7 +28,7 @@ function App() {
     setIsLoading(false);
     images.length === 0 && setValueDirty(true);
 
-    if (valueDirty && images.length === 0) {
+    if (images.length === 0) {
       setNotFound(true);
     }
   }
