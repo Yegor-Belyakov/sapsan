@@ -28,6 +28,7 @@ function Input({
           alt="searchImg"
         ></img>
         <input
+          autoComplete="off"
           className="input"
           placeholder="Телефоны, яблоки, груши..."
           type="text"

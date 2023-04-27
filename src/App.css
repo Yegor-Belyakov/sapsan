@@ -89,3 +89,28 @@
     margin-top: 100%;
   }
 }
+
+
+
+@media screen and  (max-width: 359px) {
+
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .App__search-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .App__search-group-dirty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+   
+  }
+}

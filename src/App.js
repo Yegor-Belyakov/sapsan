@@ -15,7 +15,8 @@ function App() {
   const [valueDirty, setValueDirty] = useState(false);
   const [notFound, setNotFound] = useState(false);
 
-  async function findPhoto() {
+  async function findPhoto(e) {
+    e.preventDefault()
     setIsLoading(true);
     await fetch(
       `https://api.unsplash.com/search/photos?client_id=Ip0XA55zY7b7-d19osq1L5btGg-YCeDZVpnnJjXqHxs&query=${inputValue}&page=1&per_page=30`
@@ -36,11 +37,12 @@ function App() {
   return (
     <div className={!valueDirty ? "App" : ""}>
       <div className="App__wrapper">
+      <form>
         <div
           className={
             !valueDirty ? "App__search-group-dirty" : "App__search-group"
           }
-        >
+        > 
           <Input
             inputValue={inputValue}
             setInputValue={setInputValue}
@@ -50,6 +52,7 @@ function App() {
           />
           <Button findPhoto={findPhoto} />
         </div>
+        </form>
         {isLoading ? (
           <img className="loader" src={loadingImg} alt="loadingImg"></img>
         ) : images.length ? (

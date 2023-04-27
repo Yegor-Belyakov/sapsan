@@ -4,7 +4,7 @@ import "./button.css";
 function Button({ findPhoto }) {
   return (
     <div>
-      <button onClick={() => findPhoto()} className="btn">
+      <button type="submit" onClick={(e) => findPhoto(e)} className="btn">
         Искать
       </button>
     </div>

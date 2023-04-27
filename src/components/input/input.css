@@ -58,3 +58,18 @@
   right: 14px;
 }
 }
+
+
+@media screen  and (max-width: 319px) {
+  .input__wrapper  {
+    width: 50vw;
+   position: relative;
+  }
+.input__img-delete {
+  position: absolute;
+  right: 14px;
+}
+.input {
+  width: 25vw;
+}
+}
