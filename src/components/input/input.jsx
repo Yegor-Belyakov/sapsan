@@ -7,7 +7,6 @@ function Input({
   inputValue,
   setInputValue,
   setImages,
-  valueDirty,
   setNotFound,
 }) {
   function clearInput() {
